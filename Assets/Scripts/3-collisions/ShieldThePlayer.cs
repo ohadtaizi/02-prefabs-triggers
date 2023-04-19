@@ -10,7 +10,7 @@ public class ShieldThePlayer : MonoBehaviour {
             Debug.Log("Shield triggered by player");
             var destroyComponent = other.GetComponent<DestroyOnTrigger2D>();
             if (destroyComponent) {
-                destroyComponent.StartCoroutine(ShieldTemporarily(destroyComponent));        // co-routines
+                destroyComponent.StartCoroutine(ShieldTemporarily(destroyComponent));        // co-routine
                     // NOTE: If you just call "StartCoroutine", then it will not work, 
                     //       since the present object is destroyed!
                 // ShieldTemporarily(destroyComponent);                                      // async-await

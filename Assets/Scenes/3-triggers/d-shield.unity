@@ -1111,12 +1111,12 @@ MonoBehaviour:
     m_Name: Move Horizontal
     m_Type: 1
     m_ExpectedControlType: 
-    m_Id: 8b578dae-2a00-4bb1-9fa6-c7b2e2584615
+    m_Id: 20e743e2-8393-46ee-8e24-ed3b6645f396
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 1D Axis
-      m_Id: f2d6b01e-840f-419b-845b-20f89f06ffc9
+      m_Id: 9f19868b-7d28-4e5f-8e16-045f364454e2
       m_Path: 1DAxis
       m_Interactions: 
       m_Processors: 
@@ -1124,7 +1124,7 @@ MonoBehaviour:
       m_Action: Move Horizontal
       m_Flags: 4
     - m_Name: negative
-      m_Id: b727ecae-707e-4c51-b005-2317dcb8928d
+      m_Id: ee1244c6-f838-4f1b-a8f1-7be3d0db1f9a
       m_Path: <Keyboard>/leftArrow
       m_Interactions: 
       m_Processors: 
@@ -1132,7 +1132,7 @@ MonoBehaviour:
       m_Action: Move Horizontal
       m_Flags: 8
     - m_Name: positive
-      m_Id: 59eee8a3-5115-42d3-9df2-cb6269c40f81
+      m_Id: 310b0b2a-3d4a-43fc-a178-b8a10a28e894
       m_Path: <Keyboard>/rightArrow
       m_Interactions: 
       m_Processors: 
@@ -1144,12 +1144,12 @@ MonoBehaviour:
     m_Name: Move Vertical
     m_Type: 1
     m_ExpectedControlType: 
-    m_Id: 93ea0d10-b56c-4918-8649-e66080bb365b
+    m_Id: e8c99a84-6cbf-45fc-885e-8c2f5d9cf98e
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 1D Axis
-      m_Id: d1a457d7-5798-49c3-af43-8690ef281334
+      m_Id: b48fb799-b81e-495e-a542-19f89e1fffcc
       m_Path: 1DAxis
       m_Interactions: 
       m_Processors: 
@@ -1157,7 +1157,7 @@ MonoBehaviour:
       m_Action: Move Vertical
       m_Flags: 4
     - m_Name: negative
-      m_Id: dc862d34-6862-4776-b34e-c06ac1ce368f
+      m_Id: 92cfb2e3-59e4-4c46-bbed-08f9a01f399a
       m_Path: <Keyboard>/downArrow
       m_Interactions: 
       m_Processors: 
@@ -1165,7 +1165,7 @@ MonoBehaviour:
       m_Action: Move Vertical
       m_Flags: 8
     - m_Name: positive
-      m_Id: 39fb7d07-ff51-483f-ade4-1bc15fb3c34e
+      m_Id: 272e81a6-91ba-4053-9640-a26c8c9edf25
       m_Path: <Keyboard>/upArrow
       m_Interactions: 
       m_Processors: 

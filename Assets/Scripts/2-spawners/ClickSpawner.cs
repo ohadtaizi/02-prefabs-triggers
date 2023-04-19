@@ -36,7 +36,7 @@ public class ClickSpawner: MonoBehaviour {
 
         return newObject;
     }
-
+    
     private void Update() {
         if (spawnAction.WasPressedThisFrame()) {
             spawnObject();
