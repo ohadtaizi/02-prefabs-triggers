@@ -105,7 +105,7 @@ NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    serializedVersion: 2
+    serializedVersion: 3
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
@@ -118,7 +118,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    accuratePlacement: 0
+    buildHeightMesh: 0
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
@@ -201,13 +201,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 97342529}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.9199297, w: 0.3920835}
   m_LocalPosition: {x: -0.06556451, y: -3.398108, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -133.832}
 --- !u!114 &97342533
 MonoBehaviour:
@@ -336,8 +336,7 @@ MonoBehaviour:
       m_Action: Spawn
       m_Flags: 0
     m_Flags: 0
-  prefabToSpawn: {fileID: 7837289214103786379, guid: aea6176f031eaef4a8a2c395ae5f001e,
-    type: 3}
+  prefabToSpawn: {fileID: 0}
   velocityOfSpawnedObject: {x: 0, y: -7, z: 0}
 --- !u!4 &731372380
 Transform:
@@ -346,13 +345,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 731372378}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.10424954, y: 6.86, z: 0.15387875}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &731372381
 MonoBehaviour:
@@ -382,12 +381,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ab63d9ef6fc24b4792a19faafaad16c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabToSpawn: {fileID: 7837289214103786378, guid: aea6176f031eaef4a8a2c395ae5f001e,
-    type: 3}
-  velocityOfSpawnedObject: {x: 0, y: -7, z: 0}
+  prefabToSpawn: {fileID: 0}
+  velocityOfSpawnedObject: {x: 0, y: -5, z: 0}
   minTimeBetweenSpawns: 0.2
   maxTimeBetweenSpawns: 1
-  maxXDistance: 1
+  maxXDistance: 0.5
 --- !u!1 &945324278
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,13 +462,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 945324278}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.115, y: -0.05, z: 1}
-  m_LocalScale: {x: 1.8890067, y: 1.4714665, z: 0.9528718}
+  m_LocalPosition: {x: 0.0308, y: -0.044, z: 1}
+  m_LocalScale: {x: 1.9055603, y: 1.4698479, z: 0.9528718}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2070287829
 GameObject:
@@ -512,9 +510,17 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -548,11 +554,19 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070287829}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 2070287832}
+  - {fileID: 945324280}
+  - {fileID: 97342532}
+  - {fileID: 731372380}

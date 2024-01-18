@@ -13,7 +13,6 @@ public class ShieldThePlayer : MonoBehaviour {
                 destroyComponent.StartCoroutine(ShieldTemporarily(destroyComponent));        // co-routine
                     // NOTE: If you just call "StartCoroutine", then it will not work, 
                     //       since the present object is destroyed!
-                // ShieldTemporarily(destroyComponent);                                      // async-await
                 Destroy(gameObject);  // Destroy the shield itself - prevent double-use
             }
         } else {
@@ -22,12 +21,10 @@ public class ShieldThePlayer : MonoBehaviour {
     }
 
     private IEnumerator ShieldTemporarily(DestroyOnTrigger2D destroyComponent) {   // co-routines
-    // private async void ShieldTemporarily(DestroyOnTrigger2D destroyComponent) {      // async-await
         destroyComponent.enabled = false;
         for (float i = duration; i > 0; i--) {
             Debug.Log("Shield: " + i + " seconds remaining!");
             yield return new WaitForSeconds(1);       // co-routines
-            // await Task.Delay(1000);                // async-await
         }
         Debug.Log("Shield gone!");
         destroyComponent.enabled = true;
